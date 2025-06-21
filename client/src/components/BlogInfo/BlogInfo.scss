@@ -1,0 +1,103 @@
+.blog-page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blog-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.favorite-icon {
+  font-size: 35px;
+  color: #ccc;
+  transition: color 0.3s, transform 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.favorite-icon.active {
+  color: gold;
+}
+
+
+.blog-author-link {
+  text-decoration: none;
+}
+
+.blog-author {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+
+.blog-content {
+  font-size: 18px;
+  line-height: 1.6;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+
+  span {
+    display: inline;
+  }
+}
+
+.delete-blog-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: gray;
+  border: none;
+  padding: 10px 16px;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: none;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    transform: none;
+    outline: none;
+  }
+}
+

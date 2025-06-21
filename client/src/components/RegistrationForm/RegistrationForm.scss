@@ -1,0 +1,89 @@
+$title-font: 'Nunito Sans', sans-serif;
+$main-font: 'Nunito Sans', sans-serif;
+$dark-blue: #2F4156;
+$light-blue: #C8D9E6;
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: white;
+  width: 100%;
+  max-width: 360px;
+  font-family: $main-font;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.register-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: $title-font;
+}
+
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: $main-font;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $dark-blue;
+    outline: none;
+  }
+}
+
+.role-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.role-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  color: $dark-blue;
+  font-family: $main-font;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-buttons button.active {
+  background-color: $light-blue;
+  color: $dark-blue;
+}
+
+.role-buttons button:hover {
+  border-color: $dark-blue;
+  background-color: white;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -7px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 4px;
+}

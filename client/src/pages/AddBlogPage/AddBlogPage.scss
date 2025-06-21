@@ -1,0 +1,95 @@
+$font: 'Nunito Sans', sans-serif;
+
+.blog-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  font-family: $font;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.blog-input,
+select {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #567C8D;
+}
+
+input[type="file"] {
+  font-size: 14px;
+}
+
+select {
+  background-color: #f8f9fa;
+}
+
+.text-editor-container {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .blog-form-container {
+    max-width: 100%;
+    padding: 15px 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    gap: 15px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .blog-input,
+  select {
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  input[type="file"] {
+    font-size: 12px;
+  }
+}

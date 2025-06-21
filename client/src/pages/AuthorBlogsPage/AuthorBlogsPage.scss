@@ -1,0 +1,38 @@
+.author-page {
+  padding: 40px;
+  font-family: 'Nunito Sans', sans-serif;
+
+  .author-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .author-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0;
+    }
+  }
+
+}
+
+.no-blogs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.no-blogs-text {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+}

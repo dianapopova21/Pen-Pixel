@@ -1,0 +1,103 @@
+$font: "Nunito Sans", sans-serif;
+
+.text-editor-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editBtn {
+  padding: 8px 16px;
+  margin-top: 0;
+  font-size: 14px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: $font;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.editBtn:hover {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.editBtn:active {
+  background-color: #d6d8db;
+}
+
+.editBtn:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #e2e6ea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  background-color: #d6d8db;
+}
+
+button:focus {
+  outline: none;
+}
+
+.editable-div {
+  width: 100%;
+  min-height: 200px;
+  padding: 18px 35px;
+  font-size: 16px;
+  font-family: $font;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease;
+}
+
+.editable-div:focus {
+  border-color: #567C8D;
+}
+
+.char-counter {
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .toolbar {
+    padding: 8px 5px;
+    gap: 6px;
+  }
+
+  .editBtn {
+    padding: 6px 12px;
+    font-size: 12px;
+    height: 34px;
+  }
+
+  .editable-div {
+    padding: 12px 15px;
+    font-size: 14px;
+    min-height: 150px;
+  }
+}

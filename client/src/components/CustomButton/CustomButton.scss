@@ -1,0 +1,18 @@
+$btn-color: #567C8D;
+$hover-btn-color: #2F4156;
+$btn-font: 'Nunito Sans', sans-serif;
+
+.button {
+  padding: 12px 32px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: $btn-font;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+}

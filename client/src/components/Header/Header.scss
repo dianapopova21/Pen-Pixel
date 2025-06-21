@@ -1,0 +1,109 @@
+$header-bg-color: white;
+$header-shadow-color: rgba(0, 0, 0, 0.4);
+$logo-font-size: 24px;
+$logo-font-color: #383838;
+$logo-font-family: 'Nunito Sans', sans-serif;
+$auth-icon-size: 36px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $header-bg-color;
+  box-shadow: 0 4px 6px -4px $header-shadow-color;
+  z-index: 100;
+  padding: 0;
+  border-radius: 15px;
+
+  .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container a {
+  text-decoration: none;
+}
+
+.logo_icon {
+  width: 36px;
+}
+
+.logo {
+  font-size: $logo-font-size;
+  font-family: $logo-font-family;
+  font-weight: bold;
+  color: $logo-font-color;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  height: 100%;
+}
+
+.icons a {
+  color: $logo-font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar-sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .header .header-content {
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  .logo {
+    font-size: 12px;
+  }
+
+  .logo_icon {
+    width: 24px;
+  }
+
+  .icons {
+    gap: 10px;
+    font-size: 24px;
+  }
+
+  .profile-avatar-sm {
+    width: 28px;
+    height: 28px;
+  }
+}
